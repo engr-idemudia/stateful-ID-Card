@@ -4,10 +4,12 @@ void main() {
   runApp(MaterialApp(
     home: NinjaIDCard(),
   ));
-}                        // void main() => runApp(MaterialApp());
+}     //
+//  void main() => runApp(MaterialApp(
+//     home: NinjaIDCard()));
 
 class NinjaIDCard extends StatefulWidget {
-  NinjaIDCard({Key? key}) : super(key: key);
+  // NinjaIDCard({Key? key}) : super(key: key);
 
   @override
   State<NinjaIDCard> createState() => _NinjaIDCardState();
@@ -52,7 +54,7 @@ class _NinjaIDCardState extends State<NinjaIDCard> {
           ),
                   Divider(
                     height: 90.0,
-                    color: Colors.white30,
+                    color: Colors.white70,
                   ),
 
                   Text(
@@ -88,11 +90,11 @@ class _NinjaIDCardState extends State<NinjaIDCard> {
                     SizedBox(height: 10.0),
 
                     Text(
-                      '$ninjalevel',
+                      '$ninjalevel', //interpolation
                       style: TextStyle(
                         letterSpacing: 2.0,
                         color: Colors.amberAccent.shade200,
-                        fontSize: 28.0,
+                        fontSize: 50.0,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -128,16 +130,3 @@ class _NinjaIDCardState extends State<NinjaIDCard> {
   }
 }
 
-// class Tesrrrrrrr extends StatefulWidget {
-//   const Tesrrrrrrr({Key? key}) : super(key: key);
-//
-//   @override
-//   _TesrrrrrrrState createState() => _TesrrrrrrrState();
-// }
-//
-// class _TesrrrrrrrState extends State<Tesrrrrrrr> {
-//   @override
-//   Widget build(BuildContext context) {
-//     return Container();
-//   }
-// }
